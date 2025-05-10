@@ -25,6 +25,16 @@ video = model.generate("A beautiful sunset over the ocean")
 video.save("output.mp4")
 ```
 
+## Inference Example
+
+To generate a video from a text prompt, use the inference script as follows:
+
+```bash
+python prisma/inference.py --model-path /path/to/model/weights --prompt "A beautiful sunset over the ocean" --output output.mp4 --max-frames 32 --frame-size 256 256
+```
+
+This will load the trained model, generate a video based on the provided prompt, and save it as `output.mp4`.
+
 ## License
 
 This project is licensed under the Apache 2.0 License - see the LICENSE file for details. 
